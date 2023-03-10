@@ -22,11 +22,11 @@ const ProductGrid = (props: IProductGrid) => {
     }, [inView, loadMoreFun]);
 
     return (
-        <div className="bg-white">
+        <div className="bg-gray-100">
             {categories.map((category) => (
-                <div className="mt-12  p-6" key={category.name}>
+                <div className="mt-12  p-6" key={category.name} >
                     <div className="flex flex-row justify-between">
-                        <span className="inline-flex items-center rounded-md bg-sky-800 px-8 py-2 text-md font-medium text-white">
+                        <span className="inline-flex items-center rounded-md bg-orange-600 px-8 py-2 text-md font-medium text-white">
                             {category.name}
                         </span>
                         {showLink && (
@@ -67,7 +67,7 @@ const ProductGrid = (props: IProductGrid) => {
                                     <NextLink
                                         href={`/product/${product.title}`}
                                     >
-                                        <p className="relative flex items-center justify-center rounded-md border border-transparent bg-sky-800 py-2 px-8 text-sm font-medium text-white hover:bg-sky-900 hover:cursor-pointer">
+                                        <p className="relative flex items-center justify-center rounded-md border border-transparent bg-orange-600 py-2 px-8 text-sm font-medium text-white hover:bg-orange-700 hover:cursor-pointer">
                                             View More Details
                                         </p>
                                     </NextLink>

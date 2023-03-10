@@ -72,10 +72,9 @@ const SingleProduct = () => {
                     <div className="bg-white">
                         <div className="pt-6 pb-16 sm:pb-24">
                             <div className="mx-auto mt-8">
-                                <div className="flex flex-col md:flex-row gap-x-8">
-                                    <div className="min-h-80 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80">
+                                <div className="flex flex-col md:flex-row gap-x-20">
+                                    <div className="min-h-80 w-full overflow-hidden rounded-md group-hover:opacity-75 lg:aspect-none lg:h-80 mx-4">
                                         <NextImage
-                                            layout="responsive"
                                             width="25"
                                             height="25"
                                             src={`${product.image}`}
@@ -83,7 +82,7 @@ const SingleProduct = () => {
                                             className="h-full w-full object-cover object-center lg:h-full lg:w-full"
                                         />
                                     </div>
-                                    <div className="lg:col-span-5 lg:col-start-8 mt-8 md:mt-0">
+                                    <div className="lg:col-span-5 lg:col-start-8 mt-8 md:mt-0 ml-4">
                                         <h1 className="text-xl font-medium text-gray-900 ">
                                             {product.title}
                                         </h1>
@@ -105,7 +104,7 @@ const SingleProduct = () => {
                                             }
                                             disabled={mutationIsLoading}
                                             type="button"
-                                            className="inline-flex items-center rounded-md border border-transparent bg-sky-800 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-sky-900  mt-4"
+                                            className="inline-flex items-center rounded-md border border-transparent bg-orange-600 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-orange-700  mt-4"
                                         >
                                             Buy Now
                                         </button>
