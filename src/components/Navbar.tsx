@@ -1,9 +1,7 @@
 import NextLink from "next/link";
-import { MdOutlineLocalShipping,MdOutlinePersonOutline } from "react-icons/Md";
+import { MdOutlineLocalShipping,MdOutlinePersonOutline } from "react-icons/md";
 import { FiPhone,FiHeart, FiBell } from "react-icons/fi";
 import { HiOutlineShoppingCart } from "react-icons/hi";
-import { IoPersonOutline } from "react-icons/io5";
-
 
 
 const Navbar = () => {
